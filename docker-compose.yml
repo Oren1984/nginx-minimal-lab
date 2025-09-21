@@ -1,0 +1,10 @@
+# Docker Compose for nginx-minimal-lab
+# Runs a single NGINX service serving a static page
+
+version: "3.8"
+services:
+  web:
+    image: nginx-minimal-lab:latest
+    build: .
+    ports:
+      - "8085:80"
